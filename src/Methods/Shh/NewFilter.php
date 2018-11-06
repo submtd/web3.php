@@ -9,11 +9,11 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Shh;
+namespace Submtd\Web3\Methods\Shh;
 
 use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\ShhFilterValidator;
+use Submtd\Web3\Methods\EthMethod;
+use Submtd\Web3\Validators\ShhFilterValidator;
 
 class NewFilter extends EthMethod
 {

@@ -9,11 +9,11 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Submtd\Web3\Methods\Eth;
 
 use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\BlockHashValidator;
+use Submtd\Web3\Methods\EthMethod;
+use Submtd\Web3\Validators\BlockHashValidator;
 
 class SubmitHashrate extends EthMethod
 {

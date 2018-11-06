@@ -9,16 +9,16 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Personal;
+namespace Submtd\Web3\Methods\Personal;
 
 use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\AddressValidator;
-use Web3\Validators\StringValidator;
-use Web3\Validators\QuantityValidator;
-use Web3\Formatters\AddressFormatter;
-use Web3\Formatters\StringFormatter;
-use Web3\Formatters\NumberFormatter;
+use Submtd\Web3\Methods\EthMethod;
+use Submtd\Web3\Validators\AddressValidator;
+use Submtd\Web3\Validators\StringValidator;
+use Submtd\Web3\Validators\QuantityValidator;
+use Submtd\Web3\Formatters\AddressFormatter;
+use Submtd\Web3\Formatters\StringFormatter;
+use Submtd\Web3\Formatters\NumberFormatter;
 
 class UnlockAccount extends EthMethod
 {

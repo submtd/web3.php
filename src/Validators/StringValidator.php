@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace Web3\Validators;
+namespace Submtd\Web3\Validators;
 
-use Web3\Validators\IValidator;
+use Submtd\Web3\Validators\IValidator;
 
 class StringValidator
 {

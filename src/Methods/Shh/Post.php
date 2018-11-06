@@ -9,12 +9,12 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Shh;
+namespace Submtd\Web3\Methods\Shh;
 
 use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Formatters\PostFormatter;
-use Web3\Validators\PostValidator;
+use Submtd\Web3\Methods\EthMethod;
+use Submtd\Web3\Formatters\PostFormatter;
+use Submtd\Web3\Validators\PostValidator;
 
 class Post extends EthMethod
 {

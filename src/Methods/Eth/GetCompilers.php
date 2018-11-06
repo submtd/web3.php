@@ -9,10 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Submtd\Web3\Methods\Eth;
 
 use InvalidArgumentException;
-use Web3\Methods\EthMethod;
+use Submtd\Web3\Methods\EthMethod;
 
 class GetCompilers extends EthMethod
 {

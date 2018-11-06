@@ -9,11 +9,11 @@
  * @license MIT
  */
 
-namespace Web3\Providers;
+namespace Submtd\Web3\Providers;
 
-use Web3\Providers\Provider;
-use Web3\Providers\IProvider;
-use Web3\RequestManagers\RequestManager;
+use Submtd\Web3\Providers\Provider;
+use Submtd\Web3\Providers\IProvider;
+use Submtd\Web3\RequestManagers\RequestManager;
 
 class HttpProvider extends Provider implements IProvider
 {

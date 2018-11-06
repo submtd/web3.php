@@ -9,10 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Net;
+namespace Submtd\Web3\Methods\Net;
 
 use InvalidArgumentException;
-use Web3\Methods\EthMethod;
+use Submtd\Web3\Methods\EthMethod;
 
 class Listening extends EthMethod
 {

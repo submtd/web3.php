@@ -9,17 +9,17 @@
  * @license MIT
  */
 
-namespace Web3;
+namespace Submtd\Web3;
 
-use Web3\Eth;
-use Web3\Net;
-use Web3\Personal;
-use Web3\Shh;
-use Web3\Utils;
-use Web3\Providers\Provider;
-use Web3\Providers\HttpProvider;
-use Web3\RequestManagers\RequestManager;
-use Web3\RequestManagers\HttpRequestManager;
+use Submtd\Web3\Eth;
+use Submtd\Web3\Net;
+use Submtd\Web3\Personal;
+use Submtd\Web3\Shh;
+use Submtd\Web3\Utils;
+use Submtd\Web3\Providers\Provider;
+use Submtd\Web3\Providers\HttpProvider;
+use Submtd\Web3\RequestManagers\RequestManager;
+use Submtd\Web3\RequestManagers\HttpRequestManager;
 
 class Web3
 {

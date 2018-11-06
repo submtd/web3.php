@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\RequestManagers;
+namespace Submtd\Web3\RequestManagers;
 
 class RequestManager
 {

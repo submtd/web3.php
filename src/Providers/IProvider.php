@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Providers;
+namespace Submtd\Web3\Providers;
 
 interface IProvider
 {

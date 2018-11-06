@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Formatters;
+namespace Submtd\Web3\Formatters;
 
 interface IFormatter
 {

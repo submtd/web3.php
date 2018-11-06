@@ -9,11 +9,11 @@
  * @license MIT
  */
 
-namespace Web3\Formatters;
+namespace Submtd\Web3\Formatters;
 
 use InvalidArgumentException;
-use Web3\Utils;
-use Web3\Formatters\IFormatter;
+use Submtd\Web3\Utils;
+use Submtd\Web3\Formatters\IFormatter;
 
 class BooleanFormatter implements IFormatter
 {

@@ -9,10 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Personal;
+namespace Submtd\Web3\Methods\Personal;
 
 use InvalidArgumentException;
-use Web3\Methods\EthMethod;
+use Submtd\Web3\Methods\EthMethod;
 
 class ListAccounts extends EthMethod
 {

@@ -9,13 +9,13 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Submtd\Web3\Methods\Eth;
 
 use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\QuantityValidator;
-use Web3\Formatters\OptionalQuantityFormatter;
-use Web3\Formatters\BigNumberFormatter;
+use Submtd\Web3\Methods\EthMethod;
+use Submtd\Web3\Validators\QuantityValidator;
+use Submtd\Web3\Formatters\OptionalQuantityFormatter;
+use Submtd\Web3\Formatters\BigNumberFormatter;
 
 class GetBlockTransactionCountByNumber extends EthMethod
 {

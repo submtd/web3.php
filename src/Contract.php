@@ -9,27 +9,27 @@
  * @license MIT
  */
 
-namespace Web3;
+namespace Submtd\Web3;
 
 use InvalidArgumentException;
-use Web3\Providers\Provider;
-use Web3\Providers\HttpProvider;
-use Web3\RequestManagers\RequestManager;
-use Web3\RequestManagers\HttpRequestManager;
-use Web3\Utils;
-use Web3\Eth;
-use Web3\Contracts\Ethabi;
-use Web3\Contracts\Types\Address;
-use Web3\Contracts\Types\Boolean;
-use Web3\Contracts\Types\Bytes;
-use Web3\Contracts\Types\DynamicBytes;
-use Web3\Contracts\Types\Integer;
-use Web3\Contracts\Types\Str;
-use Web3\Contracts\Types\Uinteger;
-use Web3\Validators\AddressValidator;
-use Web3\Validators\HexValidator;
-use Web3\Formatters\AddressFormatter;
-use Web3\Validators\StringValidator;
+use Submtd\Web3\Providers\Provider;
+use Submtd\Web3\Providers\HttpProvider;
+use Submtd\Web3\RequestManagers\RequestManager;
+use Submtd\Web3\RequestManagers\HttpRequestManager;
+use Submtd\Web3\Utils;
+use Submtd\Web3\Eth;
+use Submtd\Web3\Contracts\Ethabi;
+use Submtd\Web3\Contracts\Types\Address;
+use Submtd\Web3\Contracts\Types\Boolean;
+use Submtd\Web3\Contracts\Types\Bytes;
+use Submtd\Web3\Contracts\Types\DynamicBytes;
+use Submtd\Web3\Contracts\Types\Integer;
+use Submtd\Web3\Contracts\Types\Str;
+use Submtd\Web3\Contracts\Types\Uinteger;
+use Submtd\Web3\Validators\AddressValidator;
+use Submtd\Web3\Validators\HexValidator;
+use Submtd\Web3\Formatters\AddressFormatter;
+use Submtd\Web3\Validators\StringValidator;
 
 class Contract
 {
@@ -97,14 +97,21 @@ class Contract
     protected $ethabi;
 
     /**
+     * fromAddress
+     * @var string
+     */
+    protected $fromAddress;
+
+    /**
      * construct
      *
      * @param string|\Web3\Providers\Provider $provider
      * @param string|\stdClass|array $abi
      * @return void
      */
-    public function __construct($provider, $abi)
+    public function __construct($provider, $abi, $fromAddress = null)
     {
+        $this->fromAddress = $fromAddress;
         if (is_string($provider) && (filter_var($provider, FILTER_VALIDATE_URL) !== false)) {
             // check the uri schema
             if (preg_match('/^https?:\/\//', $provider) === 1) {
@@ -448,6 +455,9 @@ class Contract
             $functionName = Utils::jsonMethodToString($function);
             $functionSignature = $this->ethabi->encodeFunctionSignature($functionName);
             $transaction = [];
+            if($this->fromAddress) {
+                $transaction['from'] = $this->fromAddress;
+            }
 
             if (count($arguments) > 0) {
                 $transaction = $arguments[0];

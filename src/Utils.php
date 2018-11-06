@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3;
+namespace Submtd\Web3;
 
 use RuntimeException;
 use InvalidArgumentException;

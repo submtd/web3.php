@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace Web3\Providers;
+namespace Submtd\Web3\Providers;
 
-use Web3\RequestManagers\RequestManager;
+use Submtd\Web3\RequestManagers\RequestManager;
 
 class Provider
 {

@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Methods;
+namespace Submtd\Web3\Methods;
 
 interface IRPC
 {

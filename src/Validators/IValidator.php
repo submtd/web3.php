@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Web3\Validators;
+namespace Submtd\Web3\Validators;
 
 interface IValidator
 {

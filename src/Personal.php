@@ -9,12 +9,12 @@
  * @license MIT
  */
 
-namespace Web3;
+namespace Submtd\Web3;
 
-use Web3\Providers\Provider;
-use Web3\Providers\HttpProvider;
-use Web3\RequestManagers\RequestManager;
-use Web3\RequestManagers\HttpRequestManager;
+use Submtd\Web3\Providers\Provider;
+use Submtd\Web3\Providers\HttpProvider;
+use Submtd\Web3\RequestManagers\RequestManager;
+use Submtd\Web3\RequestManagers\HttpRequestManager;
 
 class Personal
 {

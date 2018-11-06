@@ -9,10 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Web3;
+namespace Submtd\Web3\Methods\Web3;
 
 use InvalidArgumentException;
-use Web3\Methods\EthMethod;
+use Submtd\Web3\Methods\EthMethod;
 
 class ClientVersion extends EthMethod
 {

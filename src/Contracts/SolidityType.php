@@ -9,10 +9,10 @@
  * @license MIT
  */
 
-namespace Web3\Contracts;
+namespace Submtd\Web3\Contracts;
 
-use Web3\Utils;
-use Web3\Formatters\IntegerFormatter;
+use Submtd\Web3\Utils;
+use Submtd\Web3\Formatters\IntegerFormatter;
 
 class SolidityType
 {

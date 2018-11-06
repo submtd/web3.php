@@ -1,12 +1,12 @@
 {
-    "name": "sc0vu/web3.php",
+    "name": "submtd/web3.php",
     "description": "Ethereum web3 interface.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "sc0Vu",
-            "email": "alk03073135@gmail.com"
+            "name": "Steve Harmeyer",
+            "email": "harmeyersteve@gmail.com"
         }
     ],
     "require": {
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Web3\\": "src/"
+            "Submtd\\Web3\\": "src/"
         }
     },
     "autoload-dev": {

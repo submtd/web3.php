@@ -9,14 +9,14 @@
  * @license MIT
  */
 
-namespace Web3\Methods\Eth;
+namespace Submtd\Web3\Methods\Eth;
 
 use InvalidArgumentException;
-use Web3\Methods\EthMethod;
-use Web3\Validators\BlockHashValidator;
-use Web3\Validators\QuantityValidator;
-use Web3\Formatters\HexFormatter;
-use Web3\Formatters\QuantityFormatter;
+use Submtd\Web3\Methods\EthMethod;
+use Submtd\Web3\Validators\BlockHashValidator;
+use Submtd\Web3\Validators\QuantityValidator;
+use Submtd\Web3\Formatters\HexFormatter;
+use Submtd\Web3\Formatters\QuantityFormatter;
 
 class GetUncleByBlockHashAndIndex extends EthMethod
 {
